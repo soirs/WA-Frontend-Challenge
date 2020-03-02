@@ -1,12 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+/* eslint-disable react/jsx-filename-extension */
+import React from "react";
+import { render } from "react-dom";
+import { Provider } from "react-redux";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Cart from "./components/cart";
+import Header from "./components/header";
+import ProductItem from "./components/product-item";
+import { store } from "./store";
+import "./styles/app.scss"; // global style file
 
-ReactDOM.render(<App />, document.getElementById('root'));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+render(
+  <Provider store={store}>
+    <Router>
+      <Header />
+      <main className="main">
+        <Route exact path="/" component={ProductItem} />
+        <Route exact path="/cart" component={Cart} />
+      </main>
+    </Router>
+  </Provider>,
+  document.getElementById("root")
+);

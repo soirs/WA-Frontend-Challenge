@@ -1,0 +1,33 @@
+.header {
+  width: 100%;
+  max-width: 100%;
+  height: 100px;
+  background-color: var(--header-bg-color);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  // background-color fill the full width of the viewport
+  // wrapper contains the content
+  &__wrapper {
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-desktop {
+    min-width: 130px;
+    max-width: 25vw;
+    cursor: pointer;
+  }
+  &__search {
+    padding: 10px;
+    min-width: 40%;
+    max-width: 45%;
+    @include media('<=small') {
+      display: none;
+    }
+  }
+}

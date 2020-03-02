@@ -1,0 +1,34 @@
+.cart {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  &__table {
+    width: 100%;
+  }
+  &__table-head {
+    text-align: left;
+    background-color: whitesmoke;
+    text-transform: uppercase;
+  }
+  &__item {
+    padding-top: 30px;
+    &-image {
+      img {
+        width: 5rem;
+      }
+    }
+    &-brand {
+      color: var(--product-title-color);
+    }
+    &-price {
+      @include media('<=small') {
+        display: none;
+      }
+    }
+  }
+  &__total {
+    text-align: right;
+    font-size: 1.4rem;
+  }
+}
