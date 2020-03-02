@@ -1,14 +1,16 @@
-# WhiteAway Frontend Challenge
+# WA Frontend Challenge
 
-My first encounter with Redux
+[![Netlify Status](https://api.netlify.com/api/v1/badges/2f965eba-f585-4eaf-ba33-c86530647b78/deploy-status)](https://app.netlify.com/sites/frankrs-wa-challenge/deploys)
 
-Built with
+#### [DEMO](https://frankrs-wa-challenge.netlify.com/)
+
+#### Built with
 
 - React(Create React App)
 - [Redux Toolkit](https://redux-toolkit.js.org/). Even [recommended in the Redux docs](https://redux.js.org/style-guide/style-guide/#use-redux-toolkit-for-writing-redux-logic)
 - SCSS + [include-media](https://github.com/eduardoboucas/include-media) to handle media queries
 
-Todo
+#### Todo
 
 - Structure filetree
 - Tidy styles

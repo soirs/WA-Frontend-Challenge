@@ -46,20 +46,24 @@
     &-decrease {
       width: 24px;
       height: 24px;
-      border-radius: 2px;
       border: none;
+      background-color: rgb(170, 170, 170);
     }
     &-value {
-      border: 2px solid whitesmoke;
-      background-color: whitesmoke;
+      border: none;
+      // border: 2px solid whitesmoke;
+      // border-right: 2px solid grey;
+      // border-left: 2px solid grey;
+      padding: 3px 0;
+      background-color: rgb(209, 206, 206);
       width: 25%;
       text-align: center;
     }
     &-increase {
       width: 24px;
       height: 24px;
-      border-radius: 2px;
       border: none;
+      background-color: rgb(170, 170, 170);
     }
   }
 }

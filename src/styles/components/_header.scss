@@ -26,6 +26,7 @@
     padding: 10px;
     min-width: 40%;
     max-width: 45%;
+    border-radius: 5px;
     @include media('<=small') {
       display: none;
     }
